@@ -1,8 +1,9 @@
 #! /bin/make
 # :vim: set noexpandtab:
+CC=gcc
+CFLAGS -Wall -O2
+LFLAGS = -lm `sdl2-config --cflags --libs`
 
-CFLAGS = -lm `sdl2-config --cflags --libs`
-
-sdlmandel: sdlmandel.c
-	$(CC) -o sdlmandel sdlmandel.c $(CFLAGS)
+mandelbrot-sdl: mandelbrot-sdl.cpp
+	$(CC) $(CFLAGS) -o $@ $< $(LFLAGS)
 
