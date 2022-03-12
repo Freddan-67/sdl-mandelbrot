@@ -2,8 +2,8 @@
 
 ![screenshot](screenshot.png "Screenshot")
 
-This is an implementation of the Mandelbrot Set fractal in C, using the SDL
-graphics library.
+This is an implementation of the Mandelbrot Set fractal in C++, using the SDL
+graphics library and complex template classes.
 
 It's an efficient implementation along with a user interaction by the keyboard
 allowing zooming and moving throughout the set.
